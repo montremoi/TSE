@@ -1,19 +1,32 @@
-  // Get references to all "Show More" buttons and info elements
-var showMoreButtons = document.querySelectorAll('.watch-card button');
-var infoElements = document.querySelectorAll('.watch-card .infos');
+document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.showMoreButton');
 
-// Add click event listeners to each "Show More" button
-showMoreButtons.forEach(function(button, index) {
-  button.addEventListener('click', function() {
-    var hiddenElement = infoElements[index];
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const targetId = this.getAttribute('data-target');
+                const target = document.getElementById(targetId);
+                const expanded = this.getAttribute('data-expanded');
 
-    if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
-      hiddenElement.style.display = 'block';
-      button.textContent = '-';
-      hiddenElement.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      hiddenElement.style.display = 'none';
-      button.textContent = '+';
-    }
-  });
-});
+                if (expanded === 'false') {
+                    // Expand and scroll to the information
+                    target.style.display = 'block';
+                    this.textContent = '-';
+                    this.setAttribute('data-expanded', 'true');
+                    scrollTo(target);
+                } else {
+                    // Collapse the information
+                    target.style.display = 'none';
+                    this.textContent = '+';
+                    this.setAttribute('data-expanded', 'false');
+                }
+            });
+        });
+
+        function scrollTo(element) {
+            window.scroll({
+                behavior: 'smooth',
+                left: 0,
+                top: element.offsetTop - 20, // Adjust the offset as needed
+            });
+        }
+    });
