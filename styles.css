@@ -1,11 +1,11 @@
 body, h1, p {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: rgb(63,182,255);
-    background: linear-gradient(105deg, rgba(63,182,255,1) 13%, rgba(64,182,255,1) 15%, rgba(78,179,255,1) 39%, rgba(93,173,255,1) 64%, rgba(80,162,255,1) 97%);
+    background: rgb(52,45,45);
+    background: linear-gradient(90deg, rgba(52,45,45,1) 0%, rgba(27,26,26,1) 50%, rgba(23,28,34,1) 100%);
     padding: 20px 0;
 } 
 .logo {
