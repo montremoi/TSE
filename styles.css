@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav li {
-    -webkit-text-stroke: 2px black; 
+    color: #76ABDF;
     text-stroke: 2px black; 
     margin-right: 150px;
     margin-left: 135px;
