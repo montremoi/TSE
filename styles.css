@@ -35,11 +35,12 @@ nav a {
 
 .featured-watches {
     display: flex;
-    display: none;
     justify-content: space-between; 
     margin: 40px 0;
 }
-
+.infos {
+    display: none;
+}
 .watch-card {
     background-color: #fff;
     border: 1px solid #ddd;
