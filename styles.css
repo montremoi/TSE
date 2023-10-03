@@ -27,6 +27,9 @@ header {
     text-align:center;
     font-family: 'Bahiana', cursive;
 }
+.decoration {
+  display:inline-block;
+}
 nav ul {
     list-style-type: none;
     display: flex;
