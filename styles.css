@@ -8,10 +8,10 @@ header {
     background: linear-gradient(105deg, rgba(63,182,255,1) 13%, rgba(64,182,255,1) 15%, rgba(78,179,255,1) 39%, rgba(93,173,255,1) 64%, rgba(80,162,255,1) 97%);
     padding: 20px 0;
 } 
-/*.logo {
+.logo {
     width:20px;
     height:20px;
-}*/
+}
 nav ul {
     list-style-type: none;
     display: flex;
