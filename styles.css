@@ -57,7 +57,8 @@ img {
     display: none;
 }
 .watch-card {
-    background-color: #fff;
+    background: rgb(61,178,194);
+    background: linear-gradient(297deg, rgba(61,178,194,1) 0%, rgba(70,146,182,1) 50%, rgba(78,167,231,1) 100%);
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 50px;
