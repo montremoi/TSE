@@ -1,5 +1,6 @@
 body {
-  background:black;
+  background: rgb(168,42,167);
+  background: linear-gradient(161deg, rgba(168,42,167,1) 0%, rgba(212,96,231,1) 50%, rgba(208,104,255,1) 100%);
 }
 
 body, h1, p {
