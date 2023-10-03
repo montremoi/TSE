@@ -1,16 +1,19 @@
-  document.getElementById('showMoreButton').addEventListener('click', function() {
-  var hiddenElement = document.getElementById('infos');
-  var featuredWatches = document.querySelector('.featured-watches');
-  var showMoreButton = document.getElementById('showMoreButton');
+  // Get references to all "Show More" buttons and info elements
+var showMoreButtons = document.querySelectorAll('.watch-card button');
+var infoElements = document.querySelectorAll('.watch-card .infos');
 
-  if (infos.style.display === 'none' || infos.style.display === '') {
-    infos.style.display = 'block';
-    featuredWatches.style.height = 'auto';
-    showMoreButton.textContent = '-';
-    hiddenElement.scrollIntoView({ behavior: 'smooth' });
-  } else {
-    infos.style.display = 'none';
-    featuredWatches.style.height = 'auto';
-    showMoreButton.textContent = '+';
-  }
+// Add click event listeners to each "Show More" button
+showMoreButtons.forEach(function(button, index) {
+  button.addEventListener('click', function() {
+    var hiddenElement = infoElements[index];
+
+    if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+      hiddenElement.style.display = 'block';
+      button.textContent = '-';
+      hiddenElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      hiddenElement.style.display = 'none';
+      button.textContent = '+';
+    }
+  });
 });
