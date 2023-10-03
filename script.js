@@ -1,18 +1,16 @@
- document.addEventListener('DOMContentLoaded', function () {
-        const showMoreButtons = document.querySelectorAll('#showMoreButton');
-        
-        showMoreButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const infosParagraph = this.parentElement.querySelector('.infos');
-                
-                if (infosParagraph.style.display === 'none' || infosParagraph.style.display === '') {
-                    infosParagraph.style.display = 'block';
-                    this.textContent = '-';
-                    infosParagraph.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    infosParagraph.style.display = 'none';
-                    this.textContent = '+';
-                }
-            });
-        });
-    });
+  document.getElementById('showMoreButton').addEventListener('click', function() {
+  var hiddenElement = document.getElementById('infos');
+  var watchCard = document.querySelector('.watch-card');
+  var showMoreButton = document.getElementById('showMoreButton');
+
+  if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+    hiddenElement.style.display = 'block';
+    watchCard.style.height = 'auto';
+    showMoreButton.textContent = '-';
+    hiddenElement.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    hiddenElement.style.display = 'none';
+    watchCard.style.height = 'auto';
+    showMoreButton.textContent = '+';
+  }
+});
