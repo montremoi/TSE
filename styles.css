@@ -11,8 +11,10 @@ body, h1, p {
 }
 
 header {
-    background: rgb(19,56,61);
+    /*background: rgb(19,56,61);
     background: linear-gradient(297deg, rgba(19,56,61,1) 0%, rgba(39,82,103,1) 50%, rgba(31,66,91,1) 100%);
+    */
+    background:#7FFFD4;
     padding: 20px 0;
 } 
 .logo {
