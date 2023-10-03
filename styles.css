@@ -42,7 +42,9 @@ nav a {
     color: white;
     font-family: 'Yellowtail', cursive;', sans-serif;
 }
-
+img {
+  border-radius:15px;
+}
 .featured-watches {
     display: flex;
     justify-content: space-between; 
