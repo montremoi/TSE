@@ -4,8 +4,8 @@ body, h1, p {
 }
 
 header {
-    background: rgb(52,45,45);
-    background: linear-gradient(90deg, rgba(52,45,45,1) 0%, rgba(27,26,26,1) 50%, rgba(23,28,34,1) 100%);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,106,102,1) 50%, rgba(23,28,34,1) 100%);
     padding: 20px 0;
 } 
 .logo {
