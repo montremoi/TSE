@@ -55,7 +55,7 @@ img {
     margin: 40px 0;
 }
 .infos {
-    display: none;
+    /*display: none;*/
 }
 .watch-card {
     background: rgb(61,178,194);
