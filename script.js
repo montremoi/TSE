@@ -1,32 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-        const buttons = document.querySelectorAll('.showMoreButton');
-
-        buttons.forEach(button => {
-            button.addEventListener('click', function () {
-                const targetId = this.getAttribute('data-target');
-                const target = document.getElementById(targetId);
-                const expanded = this.getAttribute('data-expanded');
-
-                if (expanded === 'false') {
-                    // Expand and scroll to the information
-                    target.style.display = 'block';
-                    this.textContent = '-';
-                    this.setAttribute('data-expanded', 'true');
-                    scrollTo(target);
-                } else {
-                    // Collapse the information
-                    target.style.display = 'none';
-                    this.textContent = '+';
-                    this.setAttribute('data-expanded', 'false');
-                }
-            });
+    const showMoreButtons = document.querySelectorAll('.showMoreButton');
+    
+    showMoreButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const infosParagraph = this.parentElement.querySelector('.infos');
+            
+            if (infosParagraph.style.display === 'none' || infosParagraph.style.display === '') {
+                infosParagraph.style.display = 'block';
+                this.textContent = '-';
+                infosParagraph.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                infosParagraph.style.display = 'none';
+                this.textContent = '+';
+            }
         });
-
-        function scrollTo(element) {
-            window.scroll({
-                behavior: 'smooth',
-                left: 0,
-                top: element.offsetTop - 20, // Adjust the offset as needed
-            });
-        }
     });
+});
