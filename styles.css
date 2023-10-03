@@ -1,3 +1,8 @@
+#infos {
+ display:none;
+}
+
+
 span {
   background-color:pink;
   border-radius:7px;
