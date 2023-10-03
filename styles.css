@@ -35,6 +35,7 @@ nav a {
 
 .featured-watches {
     display: flex;
+    display: none;
     justify-content: space-between; 
     margin: 40px 0;
 }
