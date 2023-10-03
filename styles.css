@@ -33,14 +33,13 @@ nav ul {
 }
 
 nav li {
-    color:green;
     margin-right: 150px;
     margin-left: 135px;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color:green;
     font-family: 'Yellowtail', cursive;', sans-serif;
 }
 img {
