@@ -28,9 +28,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });*/
 document.addEventListener('DOMContentLoaded', function() {
-    var watchCards = document.querySelector('.watch-card1');
-    
-    watchCards.(function(card) {
+    var watchCards = document.querySelectorAll('.watch-card1');
+
+    watchCards.forEach(function(card) {
         var showMoreButton1 = card.querySelector('.showMoreButton1');
         var infos = card.querySelector('.infos');
 
@@ -38,14 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (infos.style.display === 'none' || infos.style.display === '') {
                 infos.style.display = 'block';
                 showMoreButton1.textContent = '-';
-                watchCards.style.height = 'auto';
+                card.style.height = 'auto';
                 infos.scrollIntoView({ behavior: 'smooth' });
             } else {
                 infos.style.display = 'none';
-                watchCards.style.height = 'auto';
+                card.style.height = 'auto';
                 showMoreButton1.textContent = '+';
             }
         });
     });
 });
-
