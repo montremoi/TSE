@@ -12,13 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-document.addEventListener('DOMContentLoaded', 
-    function showMoreLess() {
-    var showMoreLess = document.getElementById('showMoreButton1'); 
-    if (infos.style.display === 'none' || infos.style.display === '') {
-        infos.style.display = 'block';
-    } else {
-        infos.style.display = 'none';
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    var showMoreButton = document.getElementById('showMoreButton1');
+    var infos = document.getElementById('infos');
 
+    showMoreButton.addEventListener('click', function() {
+        if (infos.style.display === 'none' || infos.style.display === '') {
+            infos.style.display = 'block';
+        } else {
+            infos.style.display = 'none';
+        }
+    });
+});
