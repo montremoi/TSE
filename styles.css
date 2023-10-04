@@ -112,7 +112,7 @@ nav ul {
 }
 
 nav li {
-    margin: 125px;
+    margin: 125 0 125 0;
     font-size: 16px; 
 }
 
