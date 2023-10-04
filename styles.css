@@ -124,7 +124,7 @@ img {
 .watch-card {
     font-family: 'Outfit', sans-serif;
     background:#898e96;
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
     padding: 20px;
     border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
