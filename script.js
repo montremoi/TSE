@@ -15,15 +15,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 document.addEventListener('DOMContentLoaded', function() {
     var showMoreButton = document.getElementById('showMoreButton1');
-    var infos = document.getElementById('infos');
+    var infos1 = document.getElementById('infos1');
 
     showMoreButton.addEventListener('click', function() {
-        if (infos.style.display === 'none' || infos.style.display === '') {
-            infos.style.display = 'block';
+        if (infos1.style.display === 'none' || infos1.style.display === '') {
+            infos1.style.display = 'block';
             showMoreButton.textContent = '-';
-            infos.scrollIntoView({ behavior: 'smooth' });
+            infos1.scrollIntoView({ behavior: 'smooth' });
         } else {
-            infos.style.display = 'none';
+            infos1.style.display = 'none';
         }
     });
 });
