@@ -12,18 +12,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function showMoreLess() {
-    showMoreButtons.forEach((button, index) => {
-    button.addEventListener('click', function() {
-        window.alert('Button cliqué');
-        if (infosElements[index].style.display === 'block') {
-            infosElements[index].style.display = 'none';
-            button.textContent = '+';
-        } else {
-            infosElements[index].style.display = 'block';
-            button.textContent = '-';
-        }
-    });
-});
-});
+document.addEventListener('DOMContentLoaded', 
+    function showMoreLess() {
+    var showMoreLess = document.getElementById('showMoreButton1'); 
+    if (.style.display === 'none' || .style.display === '') {
+        .style.display = 'block';
+    } else {
+        .style.display = 'none';
+    }
+}
 
