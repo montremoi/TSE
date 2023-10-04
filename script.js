@@ -1,18 +1,17 @@
-const showMoreButton = document.getElementById('showMoreButton');
-        const infos = document.getElementById('infos');
+const showMoreButtons = document.querySelectorAll('.showMoreButton');
+const infosElements = document.querySelectorAll('.infos');
 
-        let isContentVisible = false;
-
-        showMoreButton.addEventListener('click', function() {
-            if (isContentVisible) {
-                infos.style.display = 'none';
-                showMoreButton.textContent = '+';
-            } else {
-                infos.style.display = 'block';
-                showMoreButton.textContent = '-';
-            }
-            isContentVisible = !isContentVisible;
-        });
+  showMoreButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      if (infosElements[index].style.display === 'block') {
+        infosElements[index].style.display = 'none';
+        button.textContent = '+';
+      } else {
+        infosElements[index].style.display = 'block';
+        button.textContent = '-';
+      }
+    });
+  });
         
 const acheterLink = document.getElementById('acheter-link');
 const featuredWatchesSection = document.getElementById('featured-watches');
