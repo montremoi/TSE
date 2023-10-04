@@ -15,10 +15,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.addEventListener('DOMContentLoaded', 
     function showMoreLess() {
     var showMoreLess = document.getElementById('showMoreButton1'); 
-    if (.style.display === 'none' || .style.display === '') {
-        .style.display = 'block';
+    if (infos.style.display === 'none' || infos.style.display === '') {
+        infos.style.display = 'block';
     } else {
-        .style.display = 'none';
+        infos.style.display = 'none';
     }
 }
 
