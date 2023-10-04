@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     var showMoreButton = document.getElementById('showMoreButton1');
     var infos1 = document.getElementById('infos1');
 
@@ -26,4 +26,24 @@ document.addEventListener('DOMContentLoaded', function() {
             infos1.style.display = 'none';
         }
     });
+});*/
+document.addEventListener('DOMContentLoaded', function() {
+    var watchCards = document.querySelectorAll('.watch-card');
+    
+    watchCards.forEach(function(card) {
+        var showMoreButton = card.querySelector('.showMoreButton');
+        var infos = card.querySelector('.infos');
+
+        showMoreButton.addEventListener('click', function() {
+            if (infos.style.display === 'none' || infos.style.display === '') {
+                infos.style.display = 'block';
+                showMoreButton.textContent = '-';
+                infos.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                infos.style.display = 'none';
+                showMoreButton.textContent = '+';
+            }
+        });
+    });
 });
+
