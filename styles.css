@@ -11,8 +11,8 @@ button {
       align-items: center;
       background-color: #0A66C2;
       border: 0;
-      /*border-radius: 100px;
-      box-sizing: border-box;*/
+      border-radius: 100px;
+      box-sizing: border-box;
       color: blue;
       cursor: pointer;
       display: inline-flex;
