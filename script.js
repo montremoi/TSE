@@ -1,4 +1,4 @@
-window.alert("1")
+//window.alert("2")
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
