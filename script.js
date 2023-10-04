@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     showMoreButton.addEventListener('click', function() {
         if (infos.style.display === 'none' || infos.style.display === '') {
             infos.style.display = 'block';
+            showMoreButton.textContent = '-';
+            infos.scrollIntoView({ behavior: 'smooth' });
         } else {
             infos.style.display = 'none';
         }
