@@ -1,3 +1,15 @@
+button {
+   font-family: 'Gill Sans';
+   font-size: 20px;
+   background: rgb(23, 120, 236);
+   background: linear-gradient(101deg, rgba(23, 120, 236, 1) 0%, rgba(63, 84, 255, 1) 50%, rgba(69, 76, 255, 1) 100%);
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   border-radius: 15px;
+}
+
 .addional {
   display:inline-block;
 }
