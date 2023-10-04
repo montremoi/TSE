@@ -45,10 +45,9 @@ button {
   font-size:50px;
   text-align:center;
   background: #FFFFFF;
-background: linear-gradient(to top, #FFFFFF 50%, #8FFFF8 50%);
+background: repeating-linear-gradient(to top, #FFFFFF 0%, #8FFFF8 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
 }
 .infos {
  display:none;
