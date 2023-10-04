@@ -13,3 +13,11 @@ const showMoreButton = document.getElementById('showMoreButton');
             }
             isContentVisible = !isContentVisible;
         });
+        
+const acheterLink = document.getElementById('acheter-link');
+const featuredWatchesSection = document.getElementById('featured-watches');
+
+acheterLink.addEventListener('click', function (e) {
+    e.preventDefault(); 
+    featuredWatchesSection.scrollIntoView({ behavior: 'smooth' });
+});
