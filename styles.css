@@ -125,10 +125,10 @@ img {
     font-family: 'Outfit', sans-serif;
     background:#898e96;
     border: 1px solid #ddd;
-    /*padding: 20px;*/
-    /*border-radius: 50px;*/
+    padding: 20px;
+    border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex-basis: calc(33.333% - 20px); /* Make each card take up 1/3 of the width with spacing */
+    /*flex-basis: calc(33.333% - 20px); /* Make each card take up 1/3 of the width with spacing */
     transition: box-shadow 0.3s; /* Add a subtle hover effect */
 }
 
