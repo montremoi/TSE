@@ -1,5 +1,5 @@
 const showMoreButton = document.getElementById('showMoreButton');
-        const content = document.getElementById('infos');
+        const infos = document.getElementById('infos');
 
         let isContentVisible = false;
 
