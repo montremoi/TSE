@@ -14,7 +14,9 @@ button {
   display:inline-block;
 }
 .collection {
+  font-family: 'Lilita One', cursive;
   text-align:center;
+  color:cyan;
 }
 .infos {
  display:none;
