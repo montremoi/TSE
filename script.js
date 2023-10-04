@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             infos1.style.display = 'none';
         }
     });
-});*/
+});
 document.addEventListener('DOMContentLoaded', function() {
     var watchCards = document.querySelectorAll('.watch-card1');
 
@@ -46,5 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 showMoreButton1.textContent = '+';
             }
         });
+    });
+});
+*/
+document.addEventListener('DOMContentLoaded', function() {
+    var watchCard = document.querySelector('.watch-card1'); // Select the specific element
+
+    var showMoreButton1 = watchCard.querySelector('.showMoreButton1');
+    var infos = watchCard.querySelector('.infos');
+
+    showMoreButton1.addEventListener('click', function() {
+        if (infos.style.display === 'none' || infos.style.display === '') {
+            infos.style.display = 'block';
+            showMoreButton1.textContent = '-';
+            watchCard.style.height = 'auto';
+            infos.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            infos.style.display = 'none';
+            watchCard.style.height = 'auto';
+            showMoreButton1.textContent = '+';
+        }
     });
 });
