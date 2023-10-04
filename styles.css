@@ -1,7 +1,9 @@
 .addional {
   display:inline-block;
 }
-
+.collection {
+  text-align:center;
+}
 .infos {
  display:none;
 }
