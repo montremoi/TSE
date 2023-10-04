@@ -70,7 +70,7 @@ img {
     justify-content: space-between; 
     margin: 40px 0;
 }
-#infos {
+.infos {
     display: none;
 }
 .watch-card {
