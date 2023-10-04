@@ -44,7 +44,11 @@ button {
   font-family: 'Lilita One', cursive;
   font-size:50px;
   text-align:center;
-  color:cyan;
+  background: #FFFFFF;
+background: linear-gradient(to top, #FFFFFF 50%, #8FFFF8 50%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 .infos {
  display:none;
