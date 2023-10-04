@@ -31,19 +31,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var watchCards = document.querySelectorAll('.watch-card');
     
     watchCards.forEach(function(card) {
-        var showMoreButton = card.querySelector('.showMoreButton');
+        var showMoreButton1 = card.querySelector('.showMoreButton1');
         var infos = card.querySelector('.infos');
 
-        showMoreButton.addEventListener('click', function() {
+        showMoreButton1.addEventListener('click', function() {
             if (infos.style.display === 'none' || infos.style.display === '') {
                 infos.style.display = 'block';
-                showMoreButton.textContent = '-';
+                showMoreButton1.textContent = '-';
                 watchCards.style.height = 'auto';
                 infos.scrollIntoView({ behavior: 'smooth' });
             } else {
                 infos.style.display = 'none';
                 watchCards.style.height = 'auto';
-                showMoreButton.textContent = '+';
+                showMoreButton1.textContent = '+';
             }
         });
     });
