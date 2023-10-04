@@ -44,8 +44,11 @@ header {
     text-align:center;
     font-family: 'Bahiana', cursive;
 }
-.decoration {
-  display:inline-block;
+.decorations {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
 }
 nav ul {
     list-style-type: none;
