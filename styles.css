@@ -14,7 +14,8 @@ span {
   background-color:purple;
   border-radius:7px;
   
-}body {
+}
+body {
   background-color:#000000;
   /*background: rgb(46,124,134);
   background: linear-gradient(297deg, rgba(46,124,134,1) 0%, rgba(55,138,179,1) 50%, rgba(45,118,170,1) 100%);
@@ -30,7 +31,7 @@ header {
     /*background: rgb(19,56,61);
     background: linear-gradient(297deg, rgba(19,56,61,1) 0%, rgba(39,82,103,1) 50%, rgba(31,66,91,1) 100%);
     */
-    background:#303030;
+    background:#212121;
     padding: 20px 0;
 } 
 .logo {
