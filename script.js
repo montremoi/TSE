@@ -13,10 +13,16 @@ const infosElements = document.querySelectorAll('.infos');
     });
   });
         
-const acheterLink = document.getElementById('acheter-link');
-const featuredWatchesSection = document.getElementById('featured-watches');
 
-acheterLink.addEventListener('click', function (e) {
-    e.preventDefault(); 
-    featuredWatchesSection.scrollIntoView({ behavior: 'smooth' });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
