@@ -3,7 +3,7 @@ const showMoreButton = document.getElementById('showMoreButton');
 
         let isContentVisible = false;
 
-        toggleButton.addEventListener('click', function() {
+        showMoreButton.addEventListener('click', function() {
             if (isContentVisible) {
                 infos.style.display = 'none';
                 showMorebutton.textContent = '+';
