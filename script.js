@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function showMoreLess() {
     var watchCard = document.querySelector('.watch-card1'); // Select the specific element
 
     var showMoreButton1 = watchCard.querySelector('.showMoreButton1');
