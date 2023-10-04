@@ -28,9 +28,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });*/
 document.addEventListener('DOMContentLoaded', function() {
-    var watchCards = document.querySelectorAll('.watch-card');
+    var watchCards = document.querySelector('.watch-card1');
     
-    watchCards.forEach(function(card) {
+    watchCards.(function(card) {
         var showMoreButton1 = card.querySelector('.showMoreButton1');
         var infos = card.querySelector('.infos');
 
