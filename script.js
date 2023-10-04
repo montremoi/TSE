@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (infos.style.display === 'none' || infos.style.display === '') {
                 infos.style.display = 'block';
                 showMoreButton1.textContent = '-';
-                card.style.height = 'auto';
+                watchCards.style.height = 'auto';
                 infos.scrollIntoView({ behavior: 'smooth' });
             } else {
                 infos.style.display = 'none';
-                card.style.height = 'auto';
+                watchCards.style.height = 'auto';
                 showMoreButton1.textContent = '+';
             }
         });
