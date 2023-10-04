@@ -6,7 +6,7 @@ const showMoreButton = document.getElementById('showMoreButton');
         showMoreButton.addEventListener('click', function() {
             if (isContentVisible) {
                 infos.style.display = 'none';
-                showMorebutton.textContent = '+';
+                showMoreButton.textContent = '+';
             } else {
                 infos.style.display = 'block';
                 showMoreButton.textContent = '-';
