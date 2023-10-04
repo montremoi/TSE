@@ -38,9 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (infos.style.display === 'none' || infos.style.display === '') {
                 infos.style.display = 'block';
                 showMoreButton.textContent = '-';
+                watchCards.style.height = 'auto';
                 infos.scrollIntoView({ behavior: 'smooth' });
             } else {
                 infos.style.display = 'none';
+                watchCards.style.height = 'auto';
                 showMoreButton.textContent = '+';
             }
         });
