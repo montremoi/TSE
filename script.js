@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function showMoreLess() {
             showMoreButton1.textContent = '+';
         }
     });
-});*/
+});
 document.querySelectorAll('.showMoreButton').forEach(button => {
     button.addEventListener('click', function() {
         //const targetId = this.getAttribute('data-target');
@@ -85,4 +85,4 @@ document.querySelectorAll('.showMoreButton').forEach(button => {
         }
     });
 });
-
+*/
