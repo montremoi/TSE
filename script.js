@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-*/
+*//*
 document.addEventListener('DOMContentLoaded', function showMoreLess() {
     var watchCard = document.querySelector('.watch-card1'); // Select the specific element
 
@@ -67,4 +67,22 @@ document.addEventListener('DOMContentLoaded', function showMoreLess() {
             showMoreButton1.textContent = '+';
         }
     });
+});*/
+document.querySelectorAll('.showMoreButton').forEach(button => {
+    button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            if (targetElement.style.display === 'none' || targetElement.style.display === '') {
+                targetElement.style.display = 'block';
+                this.textContent = '-';
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                targetElement.style.display = 'none';
+                this.textContent = '+';
+            }
+        }
+    });
 });
+
