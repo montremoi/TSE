@@ -86,7 +86,7 @@ document.querySelectorAll('.showMoreButton').forEach(button => {
     });
 });
 */
-        
+/*      
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
 const watchCards = document.querySelector('watch-card');
@@ -117,3 +117,21 @@ const watchCards = document.querySelector('watch-card');
                 }
             });
         });
+        */
+const showMoreButtons = document.querySelectorAll('.showMoreButton');
+const infosElements = document.querySelectorAll('.infos');
+const watchCards = document.querySelectorAll('.watch-card'); 
+
+showMoreButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+        if (infosElements[index].style.display === 'block') {
+            infosElements[index].style.display = 'none';
+            watchCards[index].style.height = 'auto';
+            button.textContent = '+';
+        } else {
+            infosElements[index].style.display = 'block';
+            watchCards[index].style.height = 'auto';
+            button.textContent = '-';
+        }
+    });
+});
