@@ -89,7 +89,7 @@ document.querySelectorAll('.showMoreButton').forEach(button => {
         
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
-
+const watchCards = document.querySelector('watch-cards')
     showMoreButtons.forEach((button, index) => {
         button.addEventListener('click', function() {
             if (infosElements[index].style.display === 'block') {
