@@ -134,6 +134,7 @@ img {
     display: none;
 }
 .watch-card {
+    height: 'auto';
     font-family: 'Outfit', sans-serif;
     background:#898e96;
     border: 1px solid #ddd;
