@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function showMoreLess() {
 });*/
 document.querySelectorAll('.showMoreButton').forEach(button => {
     button.addEventListener('click', function() {
-        const targetId = this.getAttribute('data-target');
-        const targetElement = document.getElementById(targetId);
+        //const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(showMoreButton[index]);
 
         if (targetElement) {
             if (targetElement.style.display === 'none' || targetElement.style.display === '') {
