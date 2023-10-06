@@ -143,7 +143,8 @@ img {
 }
 .watch-card {
     height: auto;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Lilita One', cursive;
+    /*font-family: 'Outfit', sans-serif;*/
     background:#898e96;
     border: 1px solid #ddd;
     margin:5px;
