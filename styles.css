@@ -10,7 +10,8 @@ showMoreButton {
    background: linear-gradient(297deg, rgba(197,201,199,1) 0%, rgba(167,176,169,1) 50%, rgba(152,159,152,1) 100%);
 }
 button {
-   font-family: 'Lilita One', cursive;
+   font-family: 'Yellowtail', cursive, sans-serif;
+   /*font-family: 'Lilita One', cursive;*/
    /*font-family: 'Outfit', sans-serif;*/
    color:white;
    background: rgb(197,201,199);
