@@ -161,8 +161,9 @@ img {
     font-weight: bold;
 }
 .watch-price {
-    /*display: inline-block;*/
-    background: cyan;
+    /*display: inline-block;
+    background: cyan;*/
+   background:linear-gradient(90deg, rgba(255,164,91,1) 0%, rgba(255,205,166,1) 50%, rgba(255,146,0,1) 100%);
     color: white;
     /*margin-top: 10px; */
 }
