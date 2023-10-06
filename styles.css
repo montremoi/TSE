@@ -7,8 +7,8 @@
 button {
    font-family: 'Outfit', sans-serif;
    color:white;
-   background: rgb(83,255,167);
-   background: linear-gradient(297deg, rgba(83,255,167,1) 0%, rgba(71,255,66,1) 100%);
+   background: rgb(197,201,199);
+   background: linear-gradient(297deg, rgba(197,201,199,1) 0%, rgba(209,214,210,1) 50%, rgba(196,196,196,1) 100%);
    /*font-family: 'Gill Sans';
    font-size: 20px;
    background: rgb(23, 120, 236);
