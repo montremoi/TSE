@@ -160,8 +160,12 @@ img {
     margin-top: 10px;
     font-weight: bold;
 }
-
 .watch-price {
+    display: inline-block;
     color: #ff4500;
     margin-top: 10px;
+}
+
+.buy {
+   display: inline-block;
 }
