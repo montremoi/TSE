@@ -6,6 +6,7 @@
 }
 
 showMoreButton {
+   font-family:'Lilita One', cursive;
    background: rgb(197,201,199);
    background: linear-gradient(297deg, rgba(197,201,199,1) 0%, rgba(167,176,169,1) 50%, rgba(152,159,152,1) 100%);
 }
