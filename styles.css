@@ -6,6 +6,7 @@
 }
 button {
    font-family: 'Outfit', sans-serif;
+   color:white;
    background: rgb(83,255,167);
    background: linear-gradient(297deg, rgba(83,255,167,1) 0%, rgba(71,255,66,1) 100%);
    /*font-family: 'Gill Sans';
