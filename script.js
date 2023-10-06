@@ -126,11 +126,11 @@ showMoreButtons.forEach((button, index) => {
     button.addEventListener('click', function() {
         if (infosElements[index].style.display === 'block') {
             infosElements[index].style.display = 'none';
-            watchCards[index].style.height = 'auto';
+            //watchCards[index].style.height = 'auto';
             button.textContent = '+';
         } else {
             infosElements[index].style.display = 'block';
-            watchCards[index].style.height = 'auto';
+            //watchCards[index].style.height = 'auto';
             button.textContent = '-';
         }
     });
