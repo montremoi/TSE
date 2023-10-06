@@ -23,7 +23,6 @@ button {
       border: 0;
       border-radius: 100px;
       box-sizing: border-box;
-      color: blue;
       cursor: pointer;
       display: inline-flex;
       font-family: 'Gill Sans'/*-apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica */,Arial, sans-serif;
