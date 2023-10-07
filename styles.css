@@ -5,6 +5,7 @@
     }
 }
 i {
+ font-family: 'Space Mono', monospace;
  background-color:red;
  color:white;
  border-radius:3px;
