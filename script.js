@@ -1,5 +1,5 @@
 //window.alert("2")
-function toggleMenu() {
+function toggleCart() {
     var cartVisualization = document.getElementById("cartVizualization");
     if (cartVizualization.style.display === "none" || cartVizualization.style.display === "") {
         cartVizualization.style.display = "block";
