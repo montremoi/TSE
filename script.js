@@ -2,10 +2,10 @@
 
 function toggleCart() {
     var cartVisualization = document.getElementById("cartVisualization");
-    if (cartVizualization.style.display === "none" || cartVizualization.style.display === "") {
-        cartVizualization.style.display = "block";
+    if (cartVisualization.style.display === "none" || cartVisualization.style.display === "") {
+        cartVisualization.style.display = "block";
     } else {
-        cartVizualization.style.display = "none";
+        cartVisualization.style.display = "none";
     }
 }
 /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
