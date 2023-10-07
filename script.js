@@ -1,7 +1,7 @@
 //window.alert("2")
 
 function toggleCart() {
-    var cartVisualization = document.getElementById("cartVizualization");
+    var cartVisualization = document.getElementById("cartVisualization");
     if (cartVizualization.style.display === "none" || cartVizualization.style.display === "") {
         cartVizualization.style.display = "block";
     } else {
