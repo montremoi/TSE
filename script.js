@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 */
-document.addEventListener('DOMContentLoaded', function showMoreLess() {
+/*document.addEventListener('DOMContentLoaded', function showMoreLess() {
     var watchCard = document.querySelector('.watch-card1'); // Select the specific element
 
     var showMoreButton1 = watchCard.querySelector('.showMoreButton1');
@@ -93,9 +93,8 @@ document.querySelectorAll('.showMoreButton').forEach(button => {
             }
         }
     });
-});
+});*/
 
-/*
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
 const watchCards = document.querySelector('watch-card');
