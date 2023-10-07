@@ -152,7 +152,7 @@ function updateCartTotal() {
 }
 
 document.getElementById('buyButton1').addEventListener('click', function() {
-    addToCart('modèle A.H', 250);
+    addToCart('Le modèle A.H', 250);
 });
 
 document.getElementById('buyButton2').addEventListener('click', function() {
