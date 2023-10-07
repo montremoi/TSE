@@ -4,6 +4,9 @@
         font-size: 14px; 
     }
 }
+.cartVisualization {
+ display:none;
+}
 i {
  font-family: 'Space Mono', monospace;
  background-color:red;
