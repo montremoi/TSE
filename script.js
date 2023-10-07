@@ -160,7 +160,8 @@ function updateCartTotal() {
     cartTotalElement.textContent = cartTotal;
 }
 
-cartVisualization = document.getElementbyId('cartVisualization')
+const cartVisualization = document.getElementById('cartVisualization');
+
 document.getElementById('buyButton1').addEventListener('click', function() {
     addToCart('Le modèle A.H', 250);
     newParagraph.textContent = "Modèle A.H • 250€";
