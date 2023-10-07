@@ -142,7 +142,7 @@ let cartTotal = 0;
 function addToCart(itemName, itemPrice) {
     cart.push({ name: itemName, price: itemPrice });
     cartTotal += itemPrice;
-    alert(`Added ${itemName} to your cart!`);
+    alert(` ${itemName} ajouté à votre panier !`);
     updateCartTotal();
 }
 
