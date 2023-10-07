@@ -142,7 +142,7 @@ let cartTotal = 0;
 function addToCart(itemName, itemPrice) {
     cart.push({ name: itemName, price: itemPrice });
     cartTotal += itemPrice;
-    alert(` ${itemName} ajouté à votre panier !`);
+    alert(` ${itemName} a été ajouté à votre panier !`);
     updateCartTotal();
 }
 
@@ -152,14 +152,14 @@ function updateCartTotal() {
 }
 
 document.getElementById('buyButton1').addEventListener('click', function() {
-    addToCart('Modèle ASH', 250);
+    addToCart('modèle A.H', 250);
 });
 
 document.getElementById('buyButton2').addEventListener('click', function() {
-    addToCart('Modèle FRB', 250);
+    addToCart('Le modèle F.R.B', 250);
 });
 
 document.getElementById('buyButton3').addEventListener('click', function() {
-    addToCart('Modèle Pro Max', 500);
+    addToCart('Le modèle Pro Max', 500);
 });
 
