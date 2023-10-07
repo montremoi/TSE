@@ -1,5 +1,5 @@
 //window.alert("2")
-/*function toggleCart() {
+function toggleCart() {
     var cartVisualization = document.getElementById("cartVizualization");
     if (cartVizualization.style.display === "none" || cartVizualization.style.display === "") {
         cartVizualization.style.display = "block";
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-*//*
+*/
 document.addEventListener('DOMContentLoaded', function showMoreLess() {
     var watchCard = document.querySelector('.watch-card1'); // Select the specific element
 
@@ -93,8 +93,8 @@ document.querySelectorAll('.showMoreButton').forEach(button => {
         }
     });
 });
-*/
-/*      
+
+/*
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
 const watchCards = document.querySelector('watch-card');
@@ -125,8 +125,8 @@ const watchCards = document.querySelector('watch-card');
                 }
             });
         });
-        */
-const showMoreButtons = document.querySelectorAll('.showMoreButton');
+        
+/*const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
 const watchCards = document.querySelectorAll('.watch-card'); 
 
@@ -143,7 +143,7 @@ showMoreButtons.forEach((button, index) => {
         }
     });
 });
-
+*/
 const cart = [];
 let cartTotal = 0;
 
