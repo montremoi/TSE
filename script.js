@@ -146,7 +146,7 @@ showMoreButtons.forEach((button, index) => {
 */
 const cart = [];
 let cartTotal = 0;
-const newParagraph = document.createElement("p");
+const newParagraph = document.createElement("li");
 
 function addToCart(itemName, itemPrice) {
     cart.push({ name: itemName, price: itemPrice });
