@@ -125,7 +125,7 @@ const watchCards = document.querySelector('watch-card');
                 }
             });
         });
-        *//*HERE>:%'3
+        */
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
 const watchCards = document.querySelectorAll('.watch-card'); 
@@ -142,21 +142,6 @@ showMoreButtons.forEach((button, index) => {
             button.textContent = '-';
         }
     });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    var openCart = document.getElementById("open-cart");
-    var miniCart = document.getElementById("mini-cart");
-    var closeCart = document.getElementById("close-cart");
-
-    openCart.addEventListener("click", function() {
-        miniCart.style.right = "0";
-    });
-
-    closeCart.addEventListener("click", function() {
-        miniCart.style.right = "-300px";
-    });
-
 });
 
 const cart = [];
@@ -184,6 +169,6 @@ document.getElementById('buyButton2').addEventListener('click', function() {
 
 document.getElementById('buyButton3').addEventListener('click', function() {
     addToCart('Le modèle Pro Max', 500);
-});*/
+});
 
 
