@@ -7,6 +7,8 @@
 i {
  background-color:red;
  color:white;
+ border-radius:3px;
+ margin-left:5px;
 }
 .showMoreButton {
    font-family:'Lilita One', cursive;
