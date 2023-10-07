@@ -135,3 +135,31 @@ showMoreButtons.forEach((button, index) => {
         }
     });
 });
+
+const cart = [];
+let cartTotal = 0;
+
+function addToCart(itemName, itemPrice) {
+    cart.push({ name: itemName, price: itemPrice });
+    cartTotal += itemPrice;
+    alert(`Added ${itemName} to your cart!`);
+    updateCartTotal();
+}
+
+function updateCartTotal() {
+    const cartTotalElement = document.getElementById('cartTotal');
+    cartTotalElement.textContent = cartTotal;
+}
+
+document.getElementById('buyButton1').addEventListener('click', function() {
+    addToCart('Modèle ASH', 250);
+});
+
+document.getElementById('buyButton2').addEventListener('click', function() {
+    addToCart('Modèle FRB', 250);
+});
+
+document.getElementById('buyButton3').addEventListener('click', function() {
+    addToCart('Modèle Pro Max', 500);
+});
+
