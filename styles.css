@@ -184,6 +184,8 @@ img {
 }
 
 .buy {
+   background: rgb(80,86,117);
+   background: linear-gradient(106deg, rgba(80,86,117,1) 0%, rgba(70,75,117,1) 50%, rgba(107,116,150,1) 100%);
    font-family: 'Space Mono', monospace;
    /*font-family: 'Yellowtail', cursive;', sans-serif;
    display: inline-block;*/
