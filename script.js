@@ -146,6 +146,7 @@ showMoreButtons.forEach((button, index) => {
 */
 const cart = [];
 let cartTotal = 0;
+const newParagraph = document.createElement("p");
 
 function addToCart(itemName, itemPrice) {
     cart.push({ name: itemName, price: itemPrice });
@@ -158,7 +159,7 @@ function updateCartTotal() {
     const cartTotalElement = document.getElementById('cartTotal');
     cartTotalElement.textContent = cartTotal;
 }
-const newParagraph = document.createElement("p");
+
 cartVisualization = document.getElementbyId('cartVisualization')
 document.getElementById('buyButton1').addEventListener('click', function() {
     addToCart('Le modèle A.H', 250);
