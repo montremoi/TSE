@@ -4,7 +4,10 @@
         font-size: 14px; 
     }
 }
-
+i {
+ background-color:red;
+ color:white;
+}
 .showMoreButton {
    font-family:'Lilita One', cursive;
    background: rgb(197,201,199);
