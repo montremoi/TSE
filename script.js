@@ -125,7 +125,7 @@ const watchCards = document.querySelector('watch-card');
                 }
             });
         });
-        */
+        *//*HERE>:%'3
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
 const watchCards = document.querySelectorAll('.watch-card'); 
@@ -184,6 +184,6 @@ document.getElementById('buyButton2').addEventListener('click', function() {
 
 document.getElementById('buyButton3').addEventListener('click', function() {
     addToCart('Le modèle Pro Max', 500);
-});
+});*/
 
 
