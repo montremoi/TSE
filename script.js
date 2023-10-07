@@ -1,4 +1,5 @@
 //window.alert("2")
+
 function toggleCart() {
     var cartVisualization = document.getElementById("cartVizualization");
     if (cartVizualization.style.display === "none" || cartVizualization.style.display === "") {
@@ -158,17 +159,25 @@ function updateCartTotal() {
     const cartTotalElement = document.getElementById('cartTotal');
     cartTotalElement.textContent = cartTotal;
 }
-
+const newParagraph = document.createElement("p");
+cartVisualization = document.getElementbyId('cartVisualization')
 document.getElementById('buyButton1').addEventListener('click', function() {
     addToCart('Le modèle A.H', 250);
+    newParagraph.textContent = "Modèle A.H • 250€";
+    cartVisualization.appendChild(newParagraph);
 });
 
 document.getElementById('buyButton2').addEventListener('click', function() {
     addToCart('Le modèle F.R.B', 250);
+    newParagraph.textContent = "Modèle F.R.B • 250€";
+    cartVisualization.appendChild(newParagraph);
 });
 
 document.getElementById('buyButton3').addEventListener('click', function() {
     addToCart('Le modèle Pro Max', 500);
+    newParagraph.textContent = "Modèle Pro Max • 500€";
+    cartVisualization.appendChild(newParagraph);
+    
 });
 
 
