@@ -6,6 +6,9 @@
 }
 .cartVisualization {
  display:none;
+ font-family:'Outfit', sans-serif;
+ color: white;
+
 }
 i {
  font-family: 'Space Mono', monospace;
