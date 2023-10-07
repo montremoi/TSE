@@ -1,4 +1,12 @@
 //window.alert("2")
+function toggleMenu() {
+    var cartVisualization = document.getElementById("cartVizualization");
+    if (cartVizualization.style.display === "none" || cartVizualization.style.display === "") {
+        cartVizualization.style.display = "block";
+    } else {
+        cartVizualization.style.display = "none";
+    }
+}
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -162,4 +170,5 @@ document.getElementById('buyButton2').addEventListener('click', function() {
 document.getElementById('buyButton3').addEventListener('click', function() {
     addToCart('Le modèle Pro Max', 500);
 });
+
 
