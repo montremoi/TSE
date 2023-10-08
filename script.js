@@ -1,11 +1,14 @@
-function toggleCart() { 
-    var cartVisualization = document.getElementById("cartVisualization");
-    if (cartVisualization.style.display === "none" || cartVisualization.style.display === "") {
-        cartVisualization.style.display = "block";
-    } else {
-        cartVisualization.style.display = "none";
+document.querySelector('a[href^="#cartVisualization"]').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1); 
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
     }
-}
+});
+
 
 const showMoreButtons = document.querySelectorAll('.showMoreButton');
 const infosElements = document.querySelectorAll('.infos');
