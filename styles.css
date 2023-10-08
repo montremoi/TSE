@@ -249,5 +249,7 @@ font-family: 'Space Mono', monospace;
 }
 
 .your-items {
+    font-family: 'Space Mono', monospace;
     text-align:center;
+    margin-top:10px;
 }
