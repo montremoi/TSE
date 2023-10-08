@@ -1,6 +1,6 @@
 //window.alert("2")
 
-function toggleCart() {
+/*function toggleCart() {
     var cartVisualization = document.getElementById("cartVisualization");
     if (cartVisualization.style.left === "0%" || cartVisualization.style.left === "" || cartVisualization.style.display = "none" ) {
         cartVisualization.style.display = "block";
@@ -8,16 +8,16 @@ function toggleCart() {
     } else {
         cartVisualization.style.left = "0%"; 
     }
-}
+}*/
 
-/*function toggleCart() { //THERE !<>@8@'28292
+function toggleCart() { //THERE !<>@8@'28292
     var cartVisualization = document.getElementById("cartVisualization");
     if (cartVisualization.style.display === "none" || cartVisualization.style.display === "") {
         cartVisualization.style.display = "block";
     } else {
         cartVisualization.style.display = "none";
     }
-}*/
+}
 /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
