@@ -4,7 +4,7 @@
         font-size: 14px; 
     }
 }
-.cartVisualization {
+/*.cartVisualization {
     display: none;
     position: fixed;
     top: 0;
@@ -35,14 +35,14 @@
 .cartVisualization ul {
     list-style-type: none;
     padding: 0;
-}
+}*/
 
-/*.cartVisualization { /*THERE 1881919/*;@ !
+.cartVisualization { 
  display:none;
  font-family:'Outfit', sans-serif;
  color: white;
 
-}*/
+}
 i {
  font-family: 'Space Mono', monospace;
  background-color:red;
