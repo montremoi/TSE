@@ -248,6 +248,10 @@ background: repeating-linear-gradient(to top, #FFFFFF 0%, #40FF79 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+.stations {
+background: rgb(15,106,255);
+background: linear-gradient(89deg, rgba(15,106,255,1) 0%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 65%, rgba(255,0,0,1) 100%);
+}
 .total-items {
    font-family: 'Space Mono', monospace;
    font-size: 25px;
