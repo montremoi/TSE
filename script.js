@@ -185,12 +185,15 @@ function addToCart(itemName, itemPrice) {
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
-        cart.push({ name: itemName, price: itemPrice, quantity: 1 });
+        cart.push({ name: itemName, pricePerItem: itemPrice, quantity: 1 });
     }
 
     cartTotal += itemPrice;
     updateCartTotal();
     updateCartVisual();
+
+    
+    alert(`${itemName} • ${itemPrice}a été ajouté au panier !`);
 }
 
 function updateCartVisual() {
@@ -200,15 +203,15 @@ function updateCartVisual() {
 
     cart.forEach(item => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${item.name} • ${item.price}€ x${item.quantity}`;
+        listItem.textContent = `${item.name} • ${item.pricePerItem}€ x${item.quantity}`;
 
         const addButton = document.createElement('button');
         addButton.textContent = '+1';
-        addButton.addEventListener('click', () => addToCart(item.name, item.price));
+        addButton.addEventListener('click', () => addToCart(item.name, item.pricePerItem));
 
         const removeButton = document.createElement('button');
         removeButton.textContent = '-1';
-        removeButton.addEventListener('click', () => removeOneFromCart(item.name, item.price));
+        removeButton.addEventListener('click', () => removeOneFromCart(item.name, item.pricePerItem));
 
         listItem.appendChild(addButton);
         listItem.appendChild(removeButton);
