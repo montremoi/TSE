@@ -75,6 +75,8 @@ function updateCartVisual() {
         const removeButton = document.createElement('button');
         removeButton.textContent = '-1';
         removeButton.addEventListener('click', () => removeOneFromCart(item.name, item.pricePerItem));
+        addButton.style.background = 'rgb(255,94,106)';
+        addButton.style.background = 'linear-gradient(180deg, rgba(255,94,106,1) 0%, rgba(255,32,106,1) 50%, rgba(233,33,33,1) 100%)';
 
         listItem.appendChild(addButton);
         listItem.appendChild(removeButton);
