@@ -250,7 +250,7 @@ background: repeating-linear-gradient(to top, #FFFFFF 0%, #40FF79 100%);
 }
 .stations {
 background: #021DCF;
-background: linear-gradient(to bottom, #021DCF 50%, #FFFFFF 50%);
+background: linear-gradient(to bottom, #021DCF 59%, #FFFFFF 50%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 
