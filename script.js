@@ -155,13 +155,18 @@ showMoreButtons.forEach((button, index) => {
 */
 const cart = [];
 let cartTotal = 0;
-const newParagraph = document.createElement("li");
+//const newParagraph = document.createElement("li"); //THERE
 
 function addToCart(itemName, itemPrice) {
     cart.push({ name: itemName, price: itemPrice });
     cartTotal += itemPrice;
     alert(` ${itemName} a été ajouté à votre panier !`);
     updateCartTotal();
+    
+    const cartVisualization = document.getElementById('cartVisualization');
+    const newListItem = document.createElement("li");
+    newListItem.textContent = `${itemName} • ${itemPrice}€`;
+    cartVisualization.querySelector("ul").appendChild(newListItem);//C H G
 }
 
 function updateCartTotal() {
@@ -171,23 +176,23 @@ function updateCartTotal() {
 
 document.getElementById('buyButton1').addEventListener('click', function() {
     addToCart('Le modèle A.H', 250);
-    const cartVisualization = document.getElementById('cartVisualization');
+    /*const cartVisualization = document.getElementById('cartVisualization');
     newParagraph.textContent = "Modèle A.H • 250€";
-    cartVisualization.appendChild(newParagraph);
+    cartVisualization.appendChild(newParagraph);*/ // THERE !6483PWP
 });
 
 document.getElementById('buyButton2').addEventListener('click', function() {
     addToCart('Le modèle F.R.B', 250);
-    const cartVisualization = document.getElementById('cartVisualization');
+    /*const cartVisualization = document.getElementById('cartVisualization');
     newParagraph.textContent = "Modèle F.R.B • 250€";
-    cartVisualization.appendChild(newParagraph);
+    cartVisualization.appendChild(newParagraph);*/ //THERE
 });
 
 document.getElementById('buyButton3').addEventListener('click', function() {
     addToCart('Le modèle Pro Max', 500);
-    const cartVisualization = document.getElementById('cartVisualization');
+    /*const cartVisualization = document.getElementById('cartVisualization');
     newParagraph.textContent = "Modèle Pro Max • 500€";
-    cartVisualization.appendChild(newParagraph);
+    cartVisualization.appendChild(newParagraph);*/ //THERE @82828
     
 });
 
