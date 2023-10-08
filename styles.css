@@ -245,6 +245,7 @@ img {
 .total-items {
    font-family: 'Space Mono', monospace;
    font-size: 25px;
+   margin: 10px;
 }
 #finalizeOrder {
 background: rgb(105,64,177);
