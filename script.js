@@ -238,7 +238,7 @@ function removeOneFromCart(itemName, itemPrice) {
 }
 
 function updateCartTotal() {
-    const cartTotalElement = document.getElementById('cartTotal');
+    const cartTotalElement = document.querySelectorAll('.cartTotal');
     cartTotalElement.textContent = cartTotal;
 }
 
