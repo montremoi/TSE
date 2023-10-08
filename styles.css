@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     nav li {
         margin-right: 10px; 
         font-size: 14px; 
@@ -260,6 +260,6 @@ font-family: 'Space Mono', monospace;
     background: linear-gradient(90deg, rgba(182,118,122,1) 0%, rgba(175,81,113,1) 50%, rgba(182,95,127,1) 100%);
     font-family: 'Outfit', sans-serif;
     font-size:25px;
-    border-radius: 100px;
+    border-radius: 75px;
 }
 
