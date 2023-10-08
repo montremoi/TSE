@@ -238,8 +238,11 @@ function removeOneFromCart(itemName, itemPrice) {
 }
 
 function updateCartTotal() {
-    const cartTotalElement = document.querySelectorAll('.cartTotal');
-    cartTotalElement.textContent = cartTotal;
+    const cartTotalElements = document.querySelectorAll('.cartTotal');
+    
+    cartTotalElements.forEach(cartTotalElement => {
+        cartTotalElement.textContent = cartTotal;
+    });
 }
 
 document.getElementById('buyButton1').addEventListener('click', function() {
