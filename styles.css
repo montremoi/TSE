@@ -260,7 +260,7 @@ font-family: 'Space Mono', monospace;
     background: linear-gradient(90deg, rgba(182,118,122,1) 0%, rgba(175,81,113,1) 50%, rgba(182,95,127,1) 100%);
     font-family: 'Space Mono', monospace;
     font-size:25px;
-    border-radius: 50px;
+    border-radius: 25px;
     width:auto;
 }
 
