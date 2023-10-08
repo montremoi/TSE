@@ -67,6 +67,7 @@ function updateCartVisual() {
         const listItem = document.createElement('li');
         listItem.textContent = `${item.name} • ${item.pricePerItem}€ x${item.quantity}`;
         listItem.style.fontFamily ="'Outfit', sans-serif";
+        listItem.style.fontWeight ="bold";
         const addButton = document.createElement('button');
         addButton.textContent = '+1';
         addButton.addEventListener('click', () => addToCart(item.name, item.pricePerItem));
