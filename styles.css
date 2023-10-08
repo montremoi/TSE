@@ -5,7 +5,7 @@
     }
 }
 .cartVisualization {
-    display: none;
+    /*display: none;*//*THERE NS FORGE/'*/
     position: fixed;
     top: 0;
     left: -100%; 
