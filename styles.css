@@ -257,6 +257,6 @@ font-family: 'Space Mono', monospace;
 #cartVisualization li {
     color: blue; 
     font-family: 'Outfit', sans-serif;
-    font-display:bold;
+    font-weight:bold;
 }
 
