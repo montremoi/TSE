@@ -40,6 +40,8 @@
 .cartVisualization { 
  display: block;
  border: 1px solid #ddd;
+ border-radius:25px;
+ background-color:gray;
  margin:5px;
  padding: 20px;
  height: auto;
