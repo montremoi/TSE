@@ -73,4 +73,69 @@ document.getElementById('buyButton3').addEventListener('click', function() {
     
 });
 
+function addToCart(itemName, itemPrice) {
+    const existingItem = cart.find(item => item.name === itemName);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        // Sinon, ajouter le produit au panier
+        cart.push({ name: itemName, price: itemPrice, quantity: 1 });
+    }
+
+    cartTotal += itemPrice;
+    updateCartTotal();
+    updateCartVisual();
+}
+
+// Fonction pour mettre à jour l'affichage du panier
+function updateCartVisual() {
+    const cartItemsList = document.getElementById('cartItems');
+    cartItemsList.innerHTML = '';
+
+    cart.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} • ${item.price}€ x${item.quantity}`;
+        
+        const addButton = document.createElement('button');
+        addButton.textContent = '+1';
+        addButton.addEventListener('click', () => addToCart(item.name, item.price));
+
+        const removeButton = document.createElement('button');
+        removeButton.textContent = '-1';
+        removeButton.addEventListener('click', () => removeOneFromCart(item.name, item.price));
+
+        listItem.appendChild(addButton);
+        listItem.appendChild(removeButton);
+
+        cartItemsList.appendChild(listItem);
+    });
+}
+
+function removeOneFromCart(itemName, itemPrice) {
+    const existingItem = cart.find(item => item.name === itemName);
+
+    if (existingItem) {
+        if (existingItem.quantity > 1) {
+            existingItem.quantity -= 1;
+        } else {
+            // Si la quantité est égale à 1, supprimer complètement le produit du panier
+            const itemIndex = cart.indexOf(existingItem);
+            cart.splice(itemIndex, 1);
+        }
+
+        cartTotal -= itemPrice;
+        updateCartTotal();
+        updateCartVisual();
+    }
+}
+
+
+const finalizeOrderButton = document.getElementById('finalizeOrder');
+finalizeOrderButton.addEventListener('click', () => {
+    alert("Commande finalisée ! Merci pour votre achat.");
+});
+
+
+
 
