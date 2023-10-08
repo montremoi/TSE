@@ -2,7 +2,8 @@
 
 function toggleCart() {
     var cartVisualization = document.getElementById("cartVisualization");
-    if (cartVisualization.style.left === "0%" || cartVisualization.style.left === "") {
+    if (cartVisualization.style.left === "0%" || cartVisualization.style.left === "" || cartVisualization.style.display = "none" ) {
+        cartVisualization.style.display = "block";
         cartVisualization.style.left = "-100%"; 
     } else {
         cartVisualization.style.left = "0%"; 
