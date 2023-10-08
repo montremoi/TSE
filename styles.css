@@ -253,3 +253,10 @@ font-family: 'Space Mono', monospace;
     text-align:center;
     margin-top:10px;
 }
+
+#cartVisualization li {
+    color: white; 
+    font-family: 'Outfit', sans-serif;
+    font-display:bold;
+}
+
