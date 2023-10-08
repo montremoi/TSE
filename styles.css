@@ -255,8 +255,9 @@ font-family: 'Space Mono', monospace;
 }
 
 #cartVisualization li {
-    color: blue; 
+    color: white; 
     font-family: 'Outfit', sans-serif;
-    font-weight:bold;
+    font-size:50px;
+    border-radius: 100px;
 }
 
