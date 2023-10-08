@@ -243,11 +243,10 @@ img {
    display: inline-block;*/
 }
 .autonomy {
-   background: #00FF2A;
-background: linear-gradient(to bottom, #00FF2A 50%, #FFFFFF 50%);
+   background: #FFFFFF;
+background: repeating-linear-gradient(to top, #FFFFFF 0%, #40FF79 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
 }
 .total-items {
    font-family: 'Space Mono', monospace;
