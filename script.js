@@ -70,7 +70,8 @@ function updateCartVisual() {
         const addButton = document.createElement('button');
         addButton.textContent = '+1';
         addButton.addEventListener('click', () => addToCart(item.name, item.pricePerItem));
-
+        addButton.style.background = 'rgb(76,194,128)';
+        addButton.style.background = 'linear-gradient(90deg, rgba(76,194,128,1) 0%, rgba(75,196,126,1) 50%, rgba(73,207,99,1) 100%)';
         const removeButton = document.createElement('button');
         removeButton.textContent = '-1';
         removeButton.addEventListener('click', () => removeOneFromCart(item.name, item.pricePerItem));
