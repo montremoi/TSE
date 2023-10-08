@@ -193,7 +193,7 @@ function addToCart(itemName, itemPrice) {
     updateCartVisual();
 
     
-    alert(`${itemName} • ${itemPrice}a été ajouté au panier !`);
+    alert(`${itemName} • ${itemPrice}€ a été ajouté au panier !`);
 }
 
 function updateCartVisual() {
