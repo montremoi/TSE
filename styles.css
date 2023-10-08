@@ -125,7 +125,8 @@ background: repeating-linear-gradient(to top, #FFFFFF 0%, #8FFFF8 100%);
 
 span {
   color:white;
-  background-color:purple;
+  background: rgb(105,64,177);
+  background: linear-gradient(90deg, rgba(105,64,177,1) 0%, rgba(156,90,219,1) 50%, rgba(97,74,170,1) 100%);
   border-radius:7px;
   
 }
