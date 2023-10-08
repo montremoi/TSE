@@ -76,7 +76,7 @@ function updateCartVisual() {
         const removeButton = document.createElement('button');
         removeButton.textContent = '-1';
         removeButton.addEventListener('click', () => removeOneFromCart(item.name, item.pricePerItem));
-        revomeButton.style.background = 'rgb(255,94,106)';
+        removeButton.style.background = 'rgb(255,94,106)';
         removeButton.style.background = 'linear-gradient(180deg, rgba(255,94,106,1) 0%, rgba(255,32,106,1) 50%, rgba(233,33,33,1) 100%)';
         removeButton.style.fontFamily = "'Space Mono', monospace";
         listItem.appendChild(addButton);
