@@ -256,8 +256,10 @@ font-family: 'Space Mono', monospace;
 
 #cartVisualization li {
     color: white; 
+    background: rgb(182,118,122);
+    background: linear-gradient(90deg, rgba(182,118,122,1) 0%, rgba(175,81,113,1) 50%, rgba(182,95,127,1) 100%);
     font-family: 'Outfit', sans-serif;
-    font-size:50px;
+    font-size:25px;
     border-radius: 100px;
 }
 
