@@ -242,7 +242,7 @@ img {
    display: inline-block;*/
 }
 
-.finalizeOrder {
+#finalizeOrder {
 background: rgb(105,64,177);
 background: linear-gradient(90deg, rgba(105,64,177,1) 0%, rgba(156,90,219,1) 50%, rgba(97,74,170,1) 100%);
 font-family: 'Space Mono', monospace;
