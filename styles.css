@@ -103,7 +103,12 @@ button {
       -webkit-user-select: none;
       vertical-align: middle;
 }
-
+.theme {
+font-weight : 800;
+}
+.advice {
+color: red;
+}
 
 .addional {
   display:inline-block;
