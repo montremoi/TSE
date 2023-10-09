@@ -129,5 +129,5 @@ document.getElementById('buyButton3').addEventListener('click', function() {
 
 const finalizeOrderButton = document.getElementById('finalizeOrder');
 finalizeOrderButton.addEventListener('click', () => {
-    alert("Commande finalisée ! Merci pour votre achat.");
+    alert("Bien essayé, mais de tels produits n'existent pas ! Va falloir attendre encore quelques décennies ");
 });
