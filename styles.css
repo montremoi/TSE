@@ -103,12 +103,6 @@ button {
       -webkit-user-select: none;
       vertical-align: middle;
 }
-.theme {
-font-weight : 800;
-}
-.advice {
-color: red;
-}
 
 .addional {
   display:inline-block;
@@ -125,6 +119,12 @@ background: repeating-linear-gradient(to top, #FFFFFF 0%, #8FFFF8 100%);
 .infos {
  
  display:none;
+}
+.theme {
+font-weight : 800;
+}
+.advice {
+color: yellow;
 }
 
 
